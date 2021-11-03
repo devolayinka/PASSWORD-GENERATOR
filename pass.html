@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pass.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>password generator</title>
+</head>
+<body>
+
+<div class="psw-container">
+    <div class="psw-header">
+        <div class="psw">
+            <span id="board"></span>
+            <button id="copy"><i class="fa fa-clipboard"></i></button>
+        </div>
+    </div>
+<div class="psw-banner">
+
+<div class="form-control">
+    <label for="length">Password length</label>
+    <input type="number" value="15"id="length"min="2"max="30"/>
+</div>
+<div class="form-control">
+    <label for="uppercase">contains Uppercase letters</label>
+    <input type="checkbox" id="upper"/>
+</div>
+<div class="form-control">
+    <label for="lowercase">contains lowercase letters</label>
+    <input type="checkbox" id="lower"/>
+</div>
+<div class="form-control">
+    <label for="number">contains numbers</label>
+    <input type="checkbox" id="number"/>
+</div>
+<div class="form-control">
+    <label for="symbol">contains symbols</label>
+    <input type="checkbox" id="symbol"/>
+</div>
+<button class="gencode" id="gencode">Generate code</button>
+</div>
+</div>
+  <script src="pass.js"></script>  
+</body>
+</html>
